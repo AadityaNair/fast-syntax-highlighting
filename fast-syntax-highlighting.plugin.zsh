@@ -57,7 +57,7 @@ then
 fi
 
 if [[ ! -w $FAST_WORK_DIR ]]; then
-    FAST_WORK_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/fsh"
+    FAST_WORK_DIR="${XDG_CACHE_HOME:-$HOME/.local/share/}/fsh"
     command mkdir -p "$FAST_WORK_DIR"
 fi
 
